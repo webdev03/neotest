@@ -1,3 +1,3 @@
-import TestRunner from "./Test";
+import Tester from "./Test";
 
-export { TestRunner };
+export { Tester };
