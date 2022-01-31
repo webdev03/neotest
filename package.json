@@ -1,0 +1,40 @@
+{
+  "name": "neotest",
+  "version": "0.0.1",
+  "description": "Simplest testing library",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --minify --dts",
+    "build:watch": "tsup src/index.ts --format cjs,esm --minify --dts --watch",
+    "prepublish": "tsup src/index.ts --format cjs,esm --minify --dts"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.10",
+    "tsup": "^5.11.11",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "cross-fetch": "^3.1.5",
+    "jsdom": "^19.0.0",
+    "ws": "^8.4.2"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "type": "module",
+  "engines": {
+    "node": ">14"
+  },
+  "engineStrict": true
+}

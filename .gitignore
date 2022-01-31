@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.DS_Store
+.DS_Store?
+.Trashes
+.Spotlight-V100
+.Trashes?
