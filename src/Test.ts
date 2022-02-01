@@ -18,6 +18,7 @@ class Neotest {
       console.log(`\x1b[42mPass\x1b[0m: ${name}`);
     } catch(e) {
       console.log(`\x1b[41m${e.name}\x1b[0m: ${e.message}`);
+      process.exitCode = 1;
       this.tests.push({ success: false, name: name, errorName: e.name, errorMessage: e.message });
     }
   }
