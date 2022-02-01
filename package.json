@@ -1,6 +1,6 @@
 {
   "name": "neotest",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Simplest testing library",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
