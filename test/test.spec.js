@@ -4,5 +4,6 @@ const r = new Tester();
 
 r.test('eeee',() => {
   console.log("test");
-  throw new Error("oops");
+  r.expectToBe(1, 1);
+  r.expectTypeOf(1, "number");
 }); 
