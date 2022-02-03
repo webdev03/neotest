@@ -15,7 +15,7 @@ class Neotest {
     try {
       fn();
       this.tests.push({ success: true, name: name });
-      console.log(`\x1b[42mPass\x1b[0m: ${name}`);
+      console.log(`\x1b[30;42mPass\x1b[0m: ${name}`);
     } catch(e) {
       console.log(`\x1b[41m${e.name}\x1b[0m: ${e.message}`);
       process.exitCode = 1;
